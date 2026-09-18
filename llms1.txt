@@ -1,0 +1,19 @@
+# Vittal Raghav
+
+> Growth and content marketer in Bengaluru with 3+ years in fintech, developer tools, and consumer trading products, building and shipping open-source AI marketing tools. Open to marketing, growth, community, partnerships, and GTM roles in Bengaluru or remote India. Available immediately.
+
+## Experience
+- Stader Labs, Marketing Associate (Dec 2024 to Dec 2025): helped scale Cabbage, an AI trading platform, from $0 to $4M in transaction volume in 12 months.
+- Shyft, Marketing Lead (Jan 2023 to Feb 2024): owned GTM for a B2B developer API platform; 180+ active developers onboarded and 20+ project integrations.
+- Saros Finance, Community Manager, Contract (Mar 2024 to May 2024): Discord grown from 20K to 25K members in 3 months.
+
+## Projects
+- [DiscoverabilityOS](https://discoverability-score.vercel.app/): scores web pages for AI answer engine readiness and runs live AI search checks.
+- [AttributionOS](https://attributionos-five.vercel.app): compares six attribution models over 12,000 synthetic journeys and recommends budget reallocation.
+- [ats-watch](https://github.com/0xhipster/ats-watch): monitors hiring pages across Accel India, Lightspeed India, and Peak XV portfolio companies for new roles.
+
+## Contact
+- Email: vittalraghav3@gmail.com
+- LinkedIn: https://linkedin.com/in/vittal-raghav
+- X: https://x.com/0xhipster
+- GitHub: https://github.com/0xhipster

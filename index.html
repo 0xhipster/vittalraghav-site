@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vittal Raghav, growth and content marketer who builds with AI</title>
+<meta name="description" content="Growth and content marketer in Bengaluru with 3+ years in fintech, developer tools, and consumer trading products, building and shipping open-source AI marketing tools. Open to marketing, growth, community, partnerships, and GTM roles.">
+<meta property="og:title" content="Vittal Raghav, growth and content marketer who builds with AI">
+<meta property="og:description" content="3+ years in fintech and developer tools. Open to marketing, growth, community, partnerships, and GTM roles in Bengaluru or remote India.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FFFFFF;
+  --ink:#1A1523;
+  --muted:#5F586C;
+  --rule:#E6E1EE;
+  --grape:#5B21B6;
+  --grape-ink:#FFFFFF;
+  --grape-soft:#D9CCF5;
+  --slab:#5B21B6;
+  --display:"Bricolage Grotesque","Arial Narrow",Arial,sans-serif;
+  --body:"Instrument Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#15111C;--ink:#F2EEF8;--muted:#A9A1B8;--rule:#2C2536;
+    --grape:#B79CFF;--grape-ink:#15111C;--grape-soft:#D9CCF5;--slab:#3B1682;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#15111C;--ink:#F2EEF8;--muted:#A9A1B8;--rule:#2C2536;
+  --grape:#B79CFF;--grape-ink:#15111C;--grape-soft:#D9CCF5;--slab:#3B1682;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.6;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--grape);outline-offset:3px;border-radius:4px}
+
+.wrap{width:100%;max-width:1120px;margin-left:auto;margin-right:auto;padding-left:clamp(1.25rem,4vw,2.5rem);padding-right:clamp(1.25rem,4vw,2.5rem)}
+section{padding:clamp(4rem,9vw,7.5rem) 0}
+h2{font-family:var(--display);font-weight:700;font-size:clamp(2rem,4.5vw,3.25rem);line-height:1.05;letter-spacing:-0.02em;margin-bottom:clamp(2rem,4vw,3rem)}
+
+/* Hero */
+.hero{padding-top:clamp(2rem,5vw,3.5rem);padding-bottom:clamp(4rem,8vw,6rem)}
+.top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:clamp(3rem,8vw,6rem)}
+.name{white-space:nowrap;font-family:var(--display);font-weight:700;font-size:1.125rem;letter-spacing:-0.01em;text-decoration:none}
+.status{display:inline-flex;align-items:center;gap:.6rem;font-size:.95rem;font-weight:500;color:var(--ink);border:1.5px solid var(--rule);padding:.45rem .9rem;border-radius:999px}
+.dot{width:.6rem;height:.6rem;border-radius:50%;background:var(--grape);box-shadow:0 0 0 0 var(--grape);animation:pulse 2.4s ease-out infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--grape) 55%,transparent)}70%,100%{box-shadow:0 0 0 .6rem transparent}}
+
+.hero-grid{display:grid;grid-template-columns:auto 1fr;gap:clamp(1.25rem,3vw,2.5rem);align-items:start}
+.photo{width:clamp(88px,11vw,132px);aspect-ratio:1;border-radius:22px;background:var(--grape);color:var(--grape-ink);display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:clamp(1.8rem,3vw,2.6rem);overflow:hidden;margin-top:.6rem}
+.photo img{width:100%;height:100%;object-fit:cover}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(2.75rem,8.2vw,7rem);line-height:.92;letter-spacing:-0.045em;max-width:13ch}
+.lede{margin-top:clamp(1.75rem,3vw,2.5rem);font-size:clamp(1.125rem,1.6vw,1.3rem);line-height:1.55;color:var(--muted);max-width:56ch}
+.lede strong{color:var(--ink);font-weight:600}
+.actions{margin-top:2.25rem;display:flex;flex-wrap:wrap;gap:.75rem}
+.btn{display:inline-block;font-family:var(--body);font-weight:600;font-size:1rem;text-decoration:none;padding:.95rem 1.5rem;border-radius:12px;border:2px solid var(--ink);transition:background-color .15s,color .15s}
+.btn-primary{background:var(--ink);color:var(--paper)}
+.btn-primary:hover{background:var(--grape);border-color:var(--grape);color:var(--grape-ink)}
+.btn-ghost{background:transparent;color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:var(--paper)}
+
+/* Receipts */
+.receipts{border-top:1.5px solid var(--rule)}
+.receipt{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:1.5rem;align-items:center;padding:clamp(1.25rem,2.5vw,1.75rem) 0;border-bottom:1.5px solid var(--rule)}
+.fig{font-family:var(--display);font-weight:800;font-size:clamp(3rem,7vw,5.5rem);line-height:1;letter-spacing:-0.04em;color:var(--grape)}
+.receipt p{max-width:46ch}
+.receipt small{display:block;color:var(--muted);font-size:.95rem;margin-top:.25rem}
+
+/* Built: the one loud section */
+.built{background:var(--slab);color:#FFFFFF}
+.built h2{color:#FFFFFF}
+.built .intro{color:var(--grape-soft);max-width:52ch;margin:-1.25rem 0 clamp(2.5rem,5vw,3.5rem);font-size:1.15rem}
+.tool{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:1.5rem;padding:clamp(1.75rem,3.5vw,2.5rem) 0;border-top:1.5px solid rgba(255,255,255,.28)}
+.tool h3{font-family:var(--display);font-weight:700;font-size:clamp(1.75rem,3.4vw,2.6rem);line-height:1.05;letter-spacing:-0.025em}
+.tool p{max-width:54ch}
+.tool .for{color:var(--grape-soft);margin-top:.75rem}
+.tool .links{margin-top:1.1rem;display:flex;flex-wrap:wrap;gap:1.25rem}
+.tool .links a{font-weight:600;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
+.tool .links a:hover{text-decoration-color:var(--grape-soft)}
+.built a:focus-visible{outline-color:#FFFFFF}
+
+/* Work */
+.job{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:1.5rem;padding:clamp(1.5rem,3vw,2rem) 0;border-top:1.5px solid var(--rule)}
+.job:last-of-type{border-bottom:1.5px solid var(--rule)}
+.job h3{font-family:var(--display);font-weight:700;font-size:1.6rem;letter-spacing:-0.02em;line-height:1.1}
+.job .meta{color:var(--muted);font-size:.95rem;margin-top:.3rem}
+.job p{max-width:54ch}
+.edu{margin-top:1.75rem;color:var(--muted);max-width:60ch}
+
+/* Looking for */
+.looking p.big{font-family:var(--display);font-weight:500;font-size:clamp(1.6rem,3.4vw,2.6rem);line-height:1.2;letter-spacing:-0.02em;max-width:30ch}
+.looking p.small{margin-top:1.5rem;color:var(--muted);max-width:56ch}
+
+/* Contact */
+.contact{padding-bottom:3rem}
+.mail{display:inline-block;font-family:var(--display);font-weight:800;font-size:clamp(1.6rem,6.2vw,5rem);letter-spacing:-0.035em;line-height:1;text-decoration:none;overflow-wrap:anywhere;border-bottom:.08em solid var(--grape);padding-bottom:.08em}
+.mail:hover{color:var(--grape)}
+.elsewhere{margin-top:2.5rem;display:flex;flex-wrap:wrap;gap:1.5rem;font-weight:600}
+.elsewhere a{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px;text-decoration-color:var(--rule)}
+.elsewhere a:hover{text-decoration-color:var(--grape)}
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:.9rem}
+
+
+.nav{display:flex;gap:1.25rem;font-weight:500;font-size:.98rem}
+.nav a{text-decoration:none;padding-bottom:.15rem;border-bottom:2px solid transparent}
+.nav a:hover{border-bottom-color:var(--grape)}
+.story{margin-top:clamp(1.5rem,3vw,2.25rem);max-width:60ch;font-size:1.0625rem;color:var(--muted)}
+.story p+p{margin-top:1rem}
+.story strong{color:var(--ink);font-weight:600}
+.hero-grid .status{margin-bottom:1.5rem}
+.photo{border:1.5px solid var(--rule);background:var(--paper)}
+.section-intro{color:var(--muted);max-width:56ch;margin:-1.5rem 0 2.5rem;font-size:1.1rem}
+.group{font-family:var(--display);font-weight:700;font-size:1.35rem;letter-spacing:-0.015em;margin:2.5rem 0 1.25rem;padding-bottom:.5rem;border-bottom:1.5px solid var(--rule)}
+.feed{columns:3;column-gap:1.25rem}
+.feed blockquote{break-inside:avoid;margin:0 0 1.25rem;border:1.5px solid var(--rule);border-left:4px solid var(--grape);border-radius:12px;padding:1.1rem 1.25rem;background:var(--paper)}
+.feed blockquote p{font-weight:600;margin-bottom:.4rem}
+.feed blockquote a{color:var(--grape);font-weight:600;text-decoration:underline;text-underline-offset:4px}
+.video{margin-top:2.5rem;max-width:760px}
+.video iframe{width:100%;aspect-ratio:16/9;border:1.5px solid var(--rule);border-radius:14px}
+.vidnote{margin-top:.75rem}
+.vidnote a{color:var(--grape);font-weight:600;text-underline-offset:4px}
+@media (max-width:1000px){.feed{columns:2}}
+@media (max-width:720px){.feed{columns:1}.nav{gap:1rem;font-size:.9rem}}
+
+@media (max-width:720px){
+  .hero-grid{grid-template-columns:1fr}
+  .receipt,.tool,.job{grid-template-columns:1fr;gap:.5rem}
+  .status{font-size:.85rem}
+}
+@media (prefers-reduced-motion:reduce){.dot{animation:none}.btn{transition:none}}
+</style>
+</head>
+<body>
+
+<header class="wrap hero">
+  <div class="top">
+    <a class="name" href="#top">Vittal Raghav</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#built">Built</a>
+      <a href="#content">Content</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+
+  <div class="hero-grid" id="top">
+    <div class="photo"><img src="headshot.jpg" alt="Vittal Raghav" width="760" height="760"></div>
+    <div>
+      <span class="status"><span class="dot" aria-hidden="true"></span>Open to work in Bengaluru or remote</span>
+      <h1>Growth and content marketer who builds with AI.</h1>
+      <div class="story">
+        <p>I'm Vittal. For the last three years I've run acquisition for products people put money into and build on: creator programs, partnerships, and community at <strong>Stader Labs</strong>, where Cabbage went from $0 to $4M in transaction volume in 12 months; developer GTM at <strong>Shyft</strong>, where 180+ developers and 20+ integrations came from education, hackathons, and API credits; and a Discord at <strong>Saros</strong> that grew from 20K to 25K members in three months.</p>
+        <p>Since December I've been building the tools instead of only using them. AttributionOS, DiscoverabilityOS, and ats-watch are all live and open source, with AI doing the code and me owning the product, the positioning, and the launch.</p>
+        <p>Marketer first. Building is how I keep up.</p>
+      </div>
+      <div class="actions">
+        <a class="btn btn-primary" href="mailto:vittalraghav3@gmail.com">Email me</a>
+        <a class="btn btn-ghost" href="Vittal_Raghav_Resume.pdf" download>Download resume</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="wrap" aria-labelledby="receipts-h">
+    <h2 id="receipts-h">Receipts</h2>
+    <div class="receipts">
+      <div class="receipt">
+        <div class="fig">$4M</div>
+        <p>Transaction volume in 12 months for Cabbage, an AI trading platform, grown from zero through creator, partner, and incentive programs.<small>Stader Labs</small></p>
+      </div>
+      <div class="receipt">
+        <div class="fig">$1.6M</div>
+        <p>Referral-attributed trading volume from a 70+ creator program across paid and rev-share deals.<small>Stader Labs</small></p>
+      </div>
+      <div class="receipt">
+        <div class="fig">180+</div>
+        <p>Active developers onboarded to a B2B developer API platform over 14 months, through API credits, hackathons, and conferences.<small>Shyft, owned GTM</small></p>
+      </div>
+      <div class="receipt">
+        <div class="fig">25K</div>
+        <p>Discord members, up from 20K in 3 months through 15+ partner campaigns, with 2.5K+ joins traced to referral links.<small>Saros Finance, contract</small></p>
+      </div>
+      <div class="receipt">
+        <div class="fig">2.5K+</div>
+        <p>X followers grown through a developer education engine of threads, videos, and workshops, alongside Discord to 2.4K+.<small>Shyft, content</small></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="built" id="built" aria-labelledby="built-h">
+    <div class="wrap">
+      <h2 id="built-h">Things I built</h2>
+      <p class="intro">Open-source tools I shipped myself, with AI doing the heavy lifting on code and me owning the product, positioning, and launch.</p>
+
+      <article class="tool">
+        <h3>DiscoverabilityOS</h3>
+        <div>
+          <p>Scores a web page on how ready it is to be found and cited by AI answer engines, runs real buyer questions against live AI search, and rewrites the weak blocks of copy.</p>
+          <p class="for">For teams asking whether AI search can actually see their product.</p>
+          <div class="links">
+            <a href="https://discoverability-score.vercel.app/">Open the tool</a>
+            <a href="https://github.com/0xhipster/discoverability-os">View code</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="tool">
+        <h3>AttributionOS</h3>
+        <div>
+          <p>Compares six attribution models, from first-touch to a Markov chain, across 12,000 synthetic customer journeys, then recommends how to shift budget across seven channels.</p>
+          <p class="for">For the meeting where every channel claims the same conversion.</p>
+          <div class="links">
+            <a href="https://attributionos-five.vercel.app">Open the tool</a>
+            <a href="https://github.com/0xhipster/attributionos">View code</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="tool">
+        <h3>ats-watch</h3>
+        <div>
+          <p>Monitors hiring pages across Accel India, Lightspeed India, and Peak XV portfolio companies, and sends alerts when new roles open.</p>
+          <p class="for">Built for my own job search. Runs on GitHub Actions.</p>
+          <div class="links">
+            <a href="https://github.com/0xhipster/ats-watch">View code</a>
+            <a href="https://github.com/0xhipster/hermes-sourcing-agent">Sourcing agent</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+
+  <section class="wrap" id="content" aria-labelledby="content-h">
+    <h2 id="content-h">Proof of content</h2>
+    <p class="section-intro">Posts I wrote and shipped on brand accounts at Stader, Saros, and Shyft, plus the press that came out of them. Each one links to the live post.</p>
+
+    <h3 class="group">Stader Labs, Cabbage</h3>
+    <div class="feed">
+        <blockquote class="twitter-tweet" data-dnt="true"><p>Post from @staderlabs</p><a href="https://twitter.com/staderlabs/status/1940069809087209724">View post on X</a></blockquote>
+        <blockquote class="twitter-tweet" data-dnt="true"><p>Post from @staderlabs</p><a href="https://twitter.com/staderlabs/status/1936343405250179485">View post on X</a></blockquote>
+        <blockquote class="twitter-tweet" data-dnt="true"><p>Post from @staderlabs</p><a href="https://twitter.com/staderlabs/status/1929572599673278685">View post on X</a></blockquote>
+        <blockquote class="twitter-tweet" data-dnt="true"><p>Post from @staderlabs</p><a href="https://twitter.com/staderlabs/status/1924868983343428003">View post on X</a></blockquote>
+        <blockquote class="twitter-tweet" data-dnt="true"><p>Post from @staderlabs</p><a href="https://twitter.com/staderlabs/status/1917636540618137790">View post on X</a></blockquote>
+        <blockquote class="twitter-tweet" data-dnt="true"><p>Post from @staderlabs</p><a href="https://twitter.com/staderlabs/status/1909965158799307259">View post on X</a></blockquote>
+        <blockquote class="twitter-tweet" data-dnt="true"><p>Post from @staderlabs</p><a href="https://twitter.com/staderlabs/status/1904604168662421955">View post on X</a></blockquote>
+        <blockquote class="twitter-tweet" data-dnt="true"><p>Post from @staderlabs</p><a href="https://twitter.com/staderlabs/status/1902722779100934537">View post on X</a></blockquote>
+        <blockquote class="twitter-tweet" data-dnt="true"><p>Post from @staderlabs</p><a href="https://twitter.com/staderlabs/status/1885372630569804229">View post on X</a></blockquote>
+        <blockquote class="twitter-tweet" data-dnt="true"><p>Post from @staderlabs</p><a href="https://twitter.com/staderlabs/status/1879162819809345675">View post on X</a></blockquote>
+        <blockquote class="twitter-tweet" data-dnt="true"><p>Coverage in Cointelegraph</p><a href="https://twitter.com/Cointelegraph/status/1904937473701994761">View post on X</a></blockquote>
+    </div>
+
+    <h3 class="group">Saros Finance</h3>
+    <div class="feed">
+        <blockquote class="twitter-tweet" data-dnt="true"><p>Post from @saros_xyz</p><a href="https://twitter.com/saros_xyz/status/1765696280112865601">View post on X</a></blockquote>
+        <blockquote class="twitter-tweet" data-dnt="true"><p>Post from @saros_xyz</p><a href="https://twitter.com/saros_xyz/status/1773295228285231471">View post on X</a></blockquote>
+        <blockquote class="twitter-tweet" data-dnt="true"><p>Post from @saros_xyz</p><a href="https://twitter.com/saros_xyz/status/1784078604483375124">View post on X</a></blockquote>
+        <blockquote class="twitter-tweet" data-dnt="true"><p>Post from @saros_xyz</p><a href="https://twitter.com/saros_xyz/status/1779533554889982297">View post on X</a></blockquote>
+    </div>
+
+    <h3 class="group">Shyft</h3>
+    <div class="feed">
+        <blockquote class="twitter-tweet" data-dnt="true"><p>Post from @Shyft_to</p><a href="https://twitter.com/Shyft_to/status/1748337592410788075">View post on X</a></blockquote>
+        <blockquote class="twitter-tweet" data-dnt="true"><p>Post from @Shyft_to</p><a href="https://twitter.com/Shyft_to/status/1831702539227611392">View post on X</a></blockquote>
+        <blockquote class="twitter-tweet" data-dnt="true"><p>Post from @Shyft_to</p><a href="https://twitter.com/Shyft_to/status/1765380743684091917">View post on X</a></blockquote>
+        <blockquote class="twitter-tweet" data-dnt="true"><p>Post from @Shyft_to</p><a href="https://twitter.com/Shyft_to/status/1761052757606519110">View post on X</a></blockquote>
+        <blockquote class="twitter-tweet" data-dnt="true"><p>Post from @Shyft_to</p><a href="https://twitter.com/Shyft_to/status/1725498428602589677">View post on X</a></blockquote>
+        <blockquote class="twitter-tweet" data-dnt="true"><p>Post from @Shyft_to</p><a href="https://twitter.com/Shyft_to/status/1724749453327008219">View post on X</a></blockquote>
+    </div>
+    <div class="video">
+      <iframe src="https://www.youtube-nocookie.com/embed/Oz3cG9OxrSc" title="Shyft video" loading="lazy" allowfullscreen></iframe>
+      <p class="vidnote"><a href="https://www.youtube.com/watch?v=Oz3cG9OxrSc">Watch on YouTube</a></p>
+    </div>
+  </section>
+
+  <section class="wrap" id="work" aria-labelledby="work-h">
+    <h2 id="work-h">Where I've worked</h2>
+    <div class="job">
+      <div><h3>Stader Labs</h3><p class="meta">Marketing Associate, Dec 2024 to Dec 2025</p></div>
+      <p>Growth and community marketing on a 4-person team that owned all acquisition for Cabbage, an AI trading platform. Creator programs, 60+ co-marketing activations, and Cabbage Clash, a leaderboard competition with $750K+ in volume.</p>
+    </div>
+    <div class="job">
+      <div><h3>Shyft</h3><p class="meta">Marketing Lead, Jan 2023 to Feb 2024</p></div>
+      <p>Owned GTM, positioning, and distribution for a B2B developer API platform. Landed 20+ project integrations and built a developer education engine across threads, videos, workshops, and bootcamps.</p>
+    </div>
+    <div class="job">
+      <div><h3>Saros Finance</h3><p class="meta">Community Manager (Contract), Mar 2024 to May 2024</p></div>
+      <p>Doubled active community members from 650 to 1.2K in 6 weeks with 10+ weekly events, and built an onboarding funnel that hit 40% completion.</p>
+    </div>
+    <p class="edu">Finishing an MSc in Business Analytics at Manipal Academy of Higher Education, GPA 8.8. Earlier work at North Loop Bank, FamPay, and Headout is on the resume.</p>
+  </section>
+
+  <section class="wrap looking" aria-labelledby="looking-h">
+    <h2 id="looking-h">What I'm looking for</h2>
+    <p class="big">Marketing, growth, community, partnerships, and GTM roles at fintech, SaaS, and AI companies.</p>
+    <p class="small">Junior to mid-level. Bengaluru, hybrid, or remote in India. Available to start immediately.</p>
+  </section>
+
+  <section class="wrap contact" id="contact" aria-labelledby="contact-h">
+    <h2 id="contact-h">Say hello</h2>
+    <a class="mail" href="mailto:vittalraghav3@gmail.com">vittalraghav3@gmail.com</a>
+    <div class="elsewhere">
+      <a href="https://linkedin.com/in/vittal-raghav">LinkedIn</a>
+      <a href="https://x.com/0xhipster">X</a>
+      <a href="https://github.com/0xhipster">GitHub</a>
+      <a href="Vittal_Raghav_Resume.pdf" download>Resume (PDF)</a>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">Built by Vittal with Claude. Hosted on Vercel. This page also passes its own DiscoverabilityOS scan.</footer>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+</html>
