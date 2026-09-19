@@ -81,16 +81,18 @@ h1{font-family:var(--display);font-weight:700;font-size:clamp(2.35rem,6.2vw,5.15
 .built a:focus-visible{outline-color:#FFFFFF}
 
 /* Work */
-.job{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:1.5rem;padding:clamp(1.5rem,3vw,2rem) 0;border-top:1.5px solid var(--rule)}
-.job:last-of-type{border-bottom:1.5px solid var(--rule)}
-.job h3{font-family:var(--display);font-weight:700;font-size:1.6rem;letter-spacing:-0.02em;line-height:1.1}
-.job .meta{color:var(--muted);font-size:.85rem;margin-top:.3rem;font-family:var(--mono)}
+.jobs{display:flex;flex-direction:column;gap:1rem}
+.job{display:grid;grid-template-columns:minmax(0,4.5fr) minmax(0,7.5fr);gap:1.25rem;padding:clamp(1.35rem,2.6vw,1.75rem);border:1.5px solid var(--rule);border-left:3px solid var(--grape);border-radius:16px;background:#0c0c0c}
+.job h3{font-family:var(--display);font-weight:700;font-size:clamp(1.45rem,2.6vw,2rem);letter-spacing:-0.025em;line-height:1.1}
+.job .meta{color:var(--muted);font-size:.78rem;margin-top:.4rem;font-family:var(--mono);letter-spacing:.03em}
 .job p{max-width:54ch}
-.edu{margin-top:1.75rem;color:var(--muted);max-width:60ch}
+.edu{margin-top:1.5rem;color:var(--muted);max-width:60ch;font-size:.98rem}
 
 /* Looking for */
-.looking p.big{font-family:var(--display);font-weight:500;font-size:clamp(1.6rem,3.4vw,2.6rem);line-height:1.2;letter-spacing:-0.02em;max-width:30ch}
-.looking p.small{margin-top:1.5rem;color:var(--muted);max-width:56ch}
+.looking{border-top:2px solid var(--grape);border-bottom:2px solid var(--grape)}
+.looking .eyebrow{font-family:var(--mono);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--grape);margin:0 0 .85rem}
+.looking p.big{font-family:var(--display);font-weight:600;font-size:clamp(1.7rem,3.6vw,2.75rem);line-height:1.15;letter-spacing:-0.03em;max-width:22ch}
+.looking p.small{margin-top:1.35rem;color:var(--muted);max-width:48ch}
 
 /* Contact */
 .contact{padding-bottom:3rem}
@@ -507,6 +509,8 @@ footer{padding:2rem 0 3rem;color:var(--muted);font-size:.9rem}
 
   <section class="wrap" id="work" aria-labelledby="work-h">
     <h2 id="work-h">Where I've worked</h2>
+    <p class="section-intro">Three brands. Same job: get the product in front of the right people and keep them.</p>
+    <div class="jobs">
     <div class="job">
       <div><h3>Stader Labs</h3><p class="meta">Marketing Associate, Dec 2024 to Dec 2025</p></div>
       <p>Growth and community marketing on a 4-person team that owned all acquisition for Cabbage, an AI trading platform. Creator programs, 60+ co-marketing activations, and Cabbage Clash, a leaderboard competition with $750K+ in volume.</p>
@@ -519,13 +523,17 @@ footer{padding:2rem 0 3rem;color:var(--muted);font-size:.9rem}
       <div><h3>Shyft</h3><p class="meta">Marketing Lead, Jan 2023 to Feb 2024</p></div>
       <p>Owned GTM, positioning, and distribution for a B2B developer API platform. Landed 20+ project integrations and built a developer education engine across threads, videos, workshops, and bootcamps.</p>
     </div>
+    </div>
     <p class="edu">Finishing an MSc in Business Analytics at Manipal Academy of Higher Education, GPA 8.8. Earlier work at North Loop Bank, FamPay, and Headout is on the resume.</p>
   </section>
 
-  <section class="wrap looking" aria-labelledby="looking-h">
-    <h2 id="looking-h">What I'm looking for</h2>
-    <p class="big">Marketing, growth, community, partnerships, and GTM roles at fintech, SaaS, and AI companies.</p>
-    <p class="small">Junior to mid-level. Bengaluru, hybrid, or remote in India. Available to start immediately.</p>
+  <section class="looking" aria-labelledby="looking-h">
+    <div class="wrap">
+      <p class="eyebrow">Open to work</p>
+      <h2 id="looking-h">What I'm looking for</h2>
+      <p class="big">Marketing, growth, community, partnerships, and GTM roles at fintech, SaaS, and AI companies.</p>
+      <p class="small">Junior to mid-level. Bengaluru, hybrid, or remote in India. Available to start immediately.</p>
+    </div>
   </section>
 
   <section class="wrap contact" id="contact" aria-labelledby="contact-h">
