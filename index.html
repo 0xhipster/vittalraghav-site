@@ -38,20 +38,20 @@ section{padding:clamp(4rem,9vw,7.5rem) 0}
 h2{font-family:var(--display);font-weight:700;font-size:clamp(2rem,4.5vw,3.25rem);line-height:1.05;letter-spacing:-0.02em;margin-bottom:clamp(2rem,4vw,3rem)}
 
 /* Hero */
-.hero{padding-top:clamp(2rem,5vw,3.5rem);padding-bottom:clamp(4rem,8vw,6rem)}
-.top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:clamp(3rem,8vw,6rem)}
+.hero{padding-top:clamp(1.5rem,4vw,2.5rem);padding-bottom:clamp(3rem,6vw,4.5rem)}
+.top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:clamp(2rem,5vw,3.5rem)}
 .name{white-space:nowrap;font-family:var(--mono);font-weight:700;font-size:.92rem;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none}
 .status{display:inline-flex;align-items:center;gap:.6rem;font-size:.82rem;font-weight:400;color:var(--ink);border:1.5px solid var(--rule);padding:.45rem .9rem;border-radius:999px;font-family:var(--mono)}
 .dot{width:.6rem;height:.6rem;border-radius:50%;background:var(--grape);box-shadow:0 0 0 0 var(--grape);animation:pulse 2.4s ease-out infinite}
 @keyframes pulse{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--grape) 55%,transparent)}70%,100%{box-shadow:0 0 0 .6rem transparent}}
 
 .hero-grid{display:grid;grid-template-columns:auto 1fr;gap:clamp(1.25rem,3vw,2.5rem);align-items:start}
-.photo{width:clamp(88px,11vw,132px);aspect-ratio:1;border-radius:22px;background:var(--grape);color:var(--grape-ink);display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:clamp(1.8rem,3vw,2.6rem);overflow:hidden;margin-top:.6rem}
+.photo{width:clamp(112px,15vw,176px);aspect-ratio:1;border-radius:22px;background:var(--grape);color:var(--grape-ink);display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:clamp(1.8rem,3vw,2.6rem);overflow:hidden;margin-top:.15rem}
 .photo img{width:100%;height:100%;object-fit:cover}
-h1{font-family:var(--display);font-weight:700;font-size:clamp(2.75rem,8.2vw,7rem);line-height:.92;letter-spacing:-0.045em;max-width:13ch}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(2.35rem,6.2vw,5.15rem);line-height:.95;letter-spacing:-0.04em;max-width:14ch}
 .lede{margin-top:clamp(1.75rem,3vw,2.5rem);font-size:clamp(1.125rem,1.6vw,1.3rem);line-height:1.55;color:var(--muted);max-width:56ch}
 .lede strong{color:var(--ink);font-weight:600}
-.actions{margin-top:2.25rem;display:flex;flex-wrap:wrap;gap:.75rem}
+.actions{margin-top:1.6rem;display:flex;flex-wrap:wrap;gap:.75rem}
 .btn{display:inline-block;font-family:var(--mono);font-weight:400;font-size:.95rem;text-decoration:none;padding:.95rem 1.5rem;border-radius:12px;border:2px solid var(--ink);transition:background-color .15s,color .15s,border-color .15s}
 .btn-primary{background:var(--grape);color:#fff;border-color:var(--grape)}
 .btn-primary:hover{background:#b56bff;border-color:#b56bff;color:#fff}
@@ -103,7 +103,7 @@ footer{padding:2rem 0 3rem;color:var(--muted);font-size:.9rem}
 .nav{display:flex;gap:1.25rem;font-weight:400;font-size:.9rem;font-family:var(--mono)}
 .nav a{text-decoration:none;padding-bottom:.15rem;border-bottom:2px solid transparent}
 .nav a:hover{border-bottom-color:var(--grape)}
-.story{margin-top:clamp(1.5rem,3vw,2.25rem);max-width:60ch;font-size:1.0625rem;color:var(--muted)}
+.story{margin-top:clamp(1.1rem,2vw,1.6rem);max-width:52ch;font-size:1.05rem;line-height:1.55;color:var(--muted)}
 .story p+p{margin-top:1rem}
 .story strong{color:var(--ink);font-weight:600}
 .hero-grid .status{margin-bottom:1.5rem}
@@ -158,8 +158,8 @@ footer{padding:2rem 0 3rem;color:var(--muted);font-size:.9rem}
       <span class="status"><span class="dot" aria-hidden="true"></span>Open to work in Bengaluru or remote</span>
       <h1>Growth and content marketer who builds with AI.</h1>
       <div class="story">
-        <p>I'm Vittal. For the last three years I've run acquisition for products people put money into and build on: creator programs, partnerships, and community at <strong>Stader Labs</strong>, where Cabbage went from $0 to $4M in transaction volume in 12 months; developer GTM at <strong>Shyft</strong>, where 180+ developers and 20+ integrations came from education, hackathons, and API credits; and a Discord at <strong>Saros</strong> that grew from 20K to 25K members in three months.</p>
-        <p>Since December I've been building the tools instead of only using them. AttributionOS, DiscoverabilityOS, and ats-watch are all live and open source, with AI doing the code and me owning the product, the positioning, and the launch.</p>
+        <p>I'm Vittal. For three years I ran acquisition for products people put money into and build on. Creator programs, partnerships, and developer GTM at <strong>Stader Labs</strong>, <strong>Shyft</strong>, and <strong>Saros</strong>.</p>
+        <p>Since December I've been shipping the tools instead of only using them. AttributionOS, DiscoverabilityOS, and ats-watch are live and open source.</p>
         <p>Marketer first. Building is how I keep up.</p>
       </div>
       <div class="actions">
